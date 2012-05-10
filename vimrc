@@ -1,4 +1,3 @@
-
 " Use Vim settings, rather then Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
 set nocompatible
@@ -19,7 +18,7 @@ set history=50		" keep 50 lines of command line history
 set ruler		    " show the cursor position all the time
 set incsearch		" do incremental searching
 
-set cino=s,e0,n0,f0,{0,}0,^0,:0,=s,l0,g0,hs,ps,ts,+s,c3,C0,(2s,us,U0,w0,m0,j0,)20,*30
+set cino=s,e0,n0,f0,{0,}0,^0,:0,=s,l0,g0,hs,ps,ts,+s,c3,C0,(2s,us,U0,w0,m0,j0,)20,*30,N-s
 
 set encoding=utf-8
 set fileencodings=utf-8,gbk
