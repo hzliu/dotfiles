@@ -153,5 +153,14 @@ augroup AutoLoadSettion
     au VimLeave * call AutoSaveSession()
 augroup END
 
-
 colorscheme desert
+
+autocmd! BufNewFile * silent! 0r ~/.vim/template/template.%:e
+
+"for VAM
+let g:vim_addon_manager = {}
+let g:vim_addon_manager['drop_git_sources'] = 0
+let vam_install_path = expand('$HOME') . '/.vim/vim-addons'
+exec 'set runtimepath+='.vam_install_path.'/vim-addon-manager'
+call vam#ActivateAddons(["Vimerl", "vim-snipmate"])
+
