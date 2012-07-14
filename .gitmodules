@@ -1,6 +1,6 @@
-[submodule "vim/vim-addons/vim-snipmate"]
-	path = vim/vim-addons/vim-snipmate
-	url = https://github.com/garbas/vim-snipmate.git
+[submodule "vim/vim-addons/snipmate"]
+	path = vim/vim-addons/snipmate
+	url = git://github.com/MarcWeber/snipmate.vim
 [submodule "vim/vim-addons/vim-addon-manager"]
 	path = vim/vim-addons/vim-addon-manager
 	url = https://github.com/MarcWeber/vim-addon-manager.git
