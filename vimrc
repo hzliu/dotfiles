@@ -3,6 +3,8 @@
 set nocompatible
 set wildmenu
 
+set t_Co=256
+
 let Grep_Skip_Dirs = 'RCS CVS .svn'
 
 set tabstop=4
@@ -163,4 +165,6 @@ let g:vim_addon_manager['drop_git_sources'] = 0
 let vam_install_path = expand('$HOME') . '/.vim/vim-addons'
 exec 'set runtimepath+='.vam_install_path.'/vim-addon-manager'
 call vam#ActivateAddons(["Vimerl", "snipmate", "snipmate-snippets"])
+
+let g:solarized_termcolors=256
 
