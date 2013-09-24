@@ -1,1 +1,3 @@
 vim/doc/tags
+*.pyc
+vim/.netrwhist
