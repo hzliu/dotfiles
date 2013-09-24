@@ -1,21 +1,7 @@
-[submodule "vim/vim-addons/snipmate"]
-	path = vim/vim-addons/snipmate
-	url = git://github.com/MarcWeber/snipmate.vim
 [submodule "vim/vim-addons/vim-addon-manager"]
 	path = vim/vim-addons/vim-addon-manager
 	url = https://github.com/MarcWeber/vim-addon-manager.git
-[submodule "vim/vim-addons/Vimerl"]
-	path = vim/vim-addons/Vimerl
-	url = https://github.com/jimenezrick/vimerl
-[submodule "vim/vim-addons/snipmate-snippets"]
-	path = vim/vim-addons/snipmate-snippets
-	url = https://github.com/honza/snipmate-snippets
-[submodule "vim/vim-addons/tlib"]
-	path = vim/vim-addons/tlib
-	url = https://github.com/tomtom/tlib_vim
 [submodule "vim/vim-addons/vim-addon-manager-known-repositories"]
 	path = vim/vim-addons/vim-addon-manager-known-repositories
 	url = https://github.com/MarcWeber/vim-addon-manager-known-repositories.git
-[submodule "vim/vim-addons/vim-addon-mw-utils"]
-	path = vim/vim-addons/vim-addon-mw-utils
-	url = https://github.com/MarcWeber/vim-addon-mw-utils
+
