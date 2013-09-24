@@ -44,7 +44,7 @@ set lz
 map Q gq
 
 function! CurDir()
-    let curdir = substitute(getcwd(), '/home/yizhiliu/', '~/', "g")
+    let curdir = substitute(getcwd(), '/home/waddling/', '~/', "g")
     return curdir
 endfunction
 
@@ -155,8 +155,6 @@ augroup AutoLoadSettion
     au VimLeave * call AutoSaveSession()
 augroup END
 
-colorscheme desert
-
 autocmd! BufNewFile * silent! 0r ~/.vim/template/template.%:e
 
 "for VAM
@@ -164,7 +162,18 @@ let g:vim_addon_manager = {}
 let g:vim_addon_manager['drop_git_sources'] = 0
 let vam_install_path = expand('$HOME') . '/.vim/vim-addons'
 exec 'set runtimepath+='.vam_install_path.'/vim-addon-manager'
-call vam#ActivateAddons(["Vimerl", "snipmate", "snipmate-snippets"])
+call vam#ActivateAddons(['Vimerl', 'jedi-vim', 'Supertab', 'The_NERD_Commenter', 'vim-flake8'])
 
+"for calendar
+let g:calendar_diary="~/Dropbox/diary"
+
+"for supertab
+let g:SuperTabDefaultCompletionType = "context"
+
+"for vim-flake8
+autocmd BufWritePost *.py call Flake8()
+
+set background=dark
 let g:solarized_termcolors=256
+colorscheme desert256
 
