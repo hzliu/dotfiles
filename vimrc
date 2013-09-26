@@ -162,7 +162,11 @@ let g:vim_addon_manager = {}
 let g:vim_addon_manager['drop_git_sources'] = 0
 let vam_install_path = expand('$HOME') . '/.vim/vim-addons'
 exec 'set runtimepath+='.vam_install_path.'/vim-addon-manager'
-call vam#ActivateAddons(['Vimerl', 'jedi-vim', 'Supertab', 'The_NERD_Commenter', 'vim-flake8'])
+call vam#ActivateAddons(['ctrlp'])
+call vam#ActivateAddons(['Supertab', 'The_NERD_Commenter'])
+call vam#ActivateAddons(['jedi-vim', 'Syntastic'])
+call vam#ActivateAddons(['Vimerl'])
+
 
 "for calendar
 let g:calendar_diary="~/Dropbox/diary"
@@ -170,10 +174,24 @@ let g:calendar_diary="~/Dropbox/diary"
 "for supertab
 let g:SuperTabDefaultCompletionType = "context"
 
-"for vim-flake8
-autocmd BufWritePost *.py call Flake8()
+"we use Syntastic to check error
+let erlang_show_errors=0
+
+"for Syntastic
+let g:syntastic_python_checker='pyflakes'
+
+"for jedi
+let g:jedi#popup_on_dot=0
 
 set background=dark
 let g:solarized_termcolors=256
 colorscheme desert256
+
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.o,*.beam,
+let g:ctrlp_custom_ignore = {
+    \ 'dir':  '\v[\/]\.(git|hg|svn)$',
+    \ 'file': '\v\.(exe|so|dll|beam|swp|o)$',
+    \ }
+"let g:ctrlp_user_command = 'find %s -type f | grep -v ".svn" | grep -v ".git"'
+let g:ctrlp_cmd = 'CtrlP .'
 
