@@ -160,13 +160,6 @@ autocmd! BufNewFile * silent! 0r ~/.vim/template/template.%:e
 "for VAM
 let g:vim_addon_manager = {}
 let g:vim_addon_manager['drop_git_sources'] = 0
-let vam_install_path = expand('$HOME') . '/.vim/vim-addons'
-exec 'set runtimepath+='.vam_install_path.'/vim-addon-manager'
-call vam#ActivateAddons(['ctrlp'])
-call vam#ActivateAddons(['Supertab', 'The_NERD_Commenter'])
-call vam#ActivateAddons(['jedi-vim', 'Syntastic'])
-call vam#ActivateAddons(['Vimerl'])
-
 
 "for calendar
 let g:calendar_diary="~/Dropbox/diary"
