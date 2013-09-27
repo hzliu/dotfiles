@@ -1,7 +1,1 @@
-[submodule "vim/vim-addons/vim-addon-manager"]
-	path = vim/vim-addons/vim-addon-manager
-	url = https://github.com/MarcWeber/vim-addon-manager.git
-[submodule "vim/vim-addons/vim-addon-manager-known-repositories"]
-	path = vim/vim-addons/vim-addon-manager-known-repositories
-	url = https://github.com/MarcWeber/vim-addon-manager-known-repositories.git
 
