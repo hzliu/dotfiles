@@ -157,9 +157,7 @@ augroup END
 
 autocmd! BufNewFile * silent! 0r ~/.vim/template/template.%:e
 
-"for VAM
-let g:vim_addon_manager = {}
-let g:vim_addon_manager['drop_git_sources'] = 0
+execute pathogen#infect()
 
 "for calendar
 let g:calendar_diary="~/Dropbox/diary"
