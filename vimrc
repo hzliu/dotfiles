@@ -168,9 +168,6 @@ let g:SuperTabDefaultCompletionType = "context"
 "we use Syntastic to check error
 let erlang_show_errors=0
 
-"for Syntastic
-let g:syntastic_python_checker='pyflakes'
-
 "for jedi
 let g:jedi#popup_on_dot=0
 
@@ -185,4 +182,7 @@ let g:ctrlp_custom_ignore = {
     \ }
 "let g:ctrlp_user_command = 'find %s -type f | grep -v ".svn" | grep -v ".git"'
 let g:ctrlp_cmd = 'CtrlP .'
+let g:ctrlp_tabpage_position = 'c'
 
+"YouCompleteMe
+let g:ycm_collect_identifiers_from_tags_files = 1
