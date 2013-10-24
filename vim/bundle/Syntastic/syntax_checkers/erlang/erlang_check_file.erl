@@ -34,9 +34,6 @@ main([FileName | LibDirs]) ->
 
 compile(FileName, LibDirs) ->
     Root = get_root(filename:dirname(FileName)),
-    {ok, F} = file:open("/Users/liuhongzhang/erl_check.txt", [write]),
-    io:format(F, "FileName = ~p~nRoot = ~p~n", [FileName, Root]),
-    file:close(F),
     ok = code:add_pathsa(LibDirs),
     compile:file(FileName, [warn_obsolete_guard,
                             warn_unused_import,
